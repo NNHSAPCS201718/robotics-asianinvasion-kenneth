@@ -4,7 +4,7 @@
  * @author gcschmit
  * @version 15 May 2018
  */
-import lejos.nxt.Button;
+import lejos.nxt.*;
 
 public class Hello
 {
@@ -13,4 +13,5 @@ public class Hello
         System.out.println( "Hello World" );
         Button.waitForAnyPress();
     }
+
 }
