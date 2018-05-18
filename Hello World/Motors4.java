@@ -12,7 +12,7 @@ public class Motors4
         System.out.println("Program 4");
         Button.waitForAnyPress();
         Motor.A.backward();
-        Motor.A.rotate(1440);
+        Motor.A.rotate(1440, true); //returns out of method immediately if true, so will allow methods after to run concurrently
         while(Motor.A.isMoving())
         {
             System.out.println(Motor.A.getTachoCount());
