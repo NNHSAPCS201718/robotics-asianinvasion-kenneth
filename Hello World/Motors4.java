@@ -16,7 +16,7 @@ public class Motors4
         while(Motor.A.isMoving())
         {
             System.out.println(Motor.A.getTachoCount());
-            if(Button.readButtons()>0)
+            if(Button.LEFT.isDown())
             {
                 Motor.A.stop();
             }
