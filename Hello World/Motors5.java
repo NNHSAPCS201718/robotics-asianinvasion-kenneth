@@ -15,6 +15,7 @@ public class Motors5
         Motor.A.setSpeed(720);
         Motor.B.setSpeed(720);
         Motor.C.setSpeed(720);
+        
         for (int i = 0; i < 9; i ++){
             Motor.A.rotate(720,true);
             Motor.B.rotate(720,true);
@@ -22,10 +23,10 @@ public class Motors5
             while(Motor.A.isMoving()){
                 Delay.msDelay(200);
                 System.out.println(Motor.A.getTachoCount()+
-                "\n"+Motor.B.getTachoCount()+
-                "\n"+Motor.C.getTachoCount());
+                ""+Motor.B.getTachoCount()+
+                ""+Motor.C.getTachoCount());
             }
         }
-        
+        Button.waitForAnyPress();
     }
 }
