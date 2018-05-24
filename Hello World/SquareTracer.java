@@ -11,8 +11,9 @@ public class SquareTracer
        pilot = new DifferentialPilot(56, 105, Motor.A, Motor.B);
        for(int i =0; i<4; i++)
        {
-           pilot.travel(100);
-           pilot.rotateLeft();
+           pilot.travel(400
+           );
+           pilot.rotate(90);
            
          }
          
